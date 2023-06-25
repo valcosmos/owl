@@ -4,5 +4,6 @@ import { DevopsModule } from './devops.module';
 async function bootstrap() {
   const app = await NestFactory.create(DevopsModule);
   await app.listen(3001);
+  console.log('Devops is running on ==> http://localhost:3001');
 }
 bootstrap();
